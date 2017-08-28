@@ -1,0 +1,70 @@
+/*Untouched currently.
+Plans:
+1: Make sure that upon getting the correct weather, the page is updated with an icon.
+2: On top of that, if possible change the color scheme for the entire page, corresponding with the current weather. Consider it an exercise!
+3: Finally, make sure that the background changes to one of a few random images depending on the current weather conditions.*/
+
+/*
+Note to self: My CSS game is extremely weak.
+1: Read up more on color choice in design.
+2: Read up more on responsive design. I don't want to rely on bootstrap much more.
+3: Learn how to properly line up your elements. As it is it's driving me nuts that I can't figure out how to align some elements here and there.
+
+*/
+/*
+Images to be used:
+*/
+
+body{
+  font: arial, serif;
+  background-color: #2A79AB;
+  color: white;
+}
+
+h1{
+  font: 3em arial;
+}
+
+.well{
+  background-color: #1E9FEF;
+  border-color: #73695C;
+}
+
+.location{
+  font: 2.5em arial;
+}
+
+.temp p{
+  font-size: 2em;
+}
+
+.tempBtn{
+  background-color: #FFCB82;
+  color: black;
+}
+
+.tempBtn:hover {
+  background-color: #FFE2BA;
+}
+
+.tempBtn >.F{
+}
+
+.weather{
+  font-size: 2em;
+  white-space: nowrap;
+}
+.time{
+  font-size: 2em;
+}
+.atmospheric{
+  font-size: 1.5em;
+}
+
+.precip{
+  font-size: 1.5em;
+}
+
+.errMessg{
+  color: #FFA984;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Weather API test mk 1</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!--Last edited 2/11/2017
+To-do:
+1: Fix up the fahrenheit to celsius button so that it is more user-friendly.
+2: Collect images for different weather patterns.
+3: Structure page nicely to be ready for CSS.
+4: Clean up HTML code.
+5: Add more user-friendly icons for time, cloud cover, humidity, and rain chance.
+-->
+
+<body>
+  <div class="container">
+    <!--The first row, holds the top-level header.-->
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center">Local weather app</h1>
+      </div>
+    </div>
+    <!--The main first well. To be used primarily for structure purposes. Holds the relevant weather information.-->
+    <div class="well well-lg">
+    <div class="row">
+      <div class="col-xs-12">
+        <!--Placeholders for the user's city and state. Will be populated by the javascript.-->
+        <h1 class="location text-center">City, state</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="temp col-xs-6">
+        <div class="row">
+          <!--Placeholders for the users current temperature, and the button that switches from fahrenheit to celsius.-->
+          <p class="col-xs-6">Current temperature</p>
+          <div class="col-xs-6">
+            <button class="btn tempBtn">
+              <!--These are in spans so that they can be easily styled later.-->
+              <span class="F">F</span> <i class="fa fa-arrows-h"></i> <span class="C">C</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="time col-xs-6">
+        <p>Current time</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="weather col-xs-6">
+        <div class="row">
+          <p>Weather info and icon</p>
+        </div>
+      </div>
+      <div class="other col-xs-6">
+        <p class="atmospheric">cloud cover, humidity</p>
+        <p class="precip">% chance of x</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Adding an error message at the end. If any of the potential fallback methods are used, the user will receive a message at the bottom detailing the error. Otherwise, it will remain blank.-->
+  <div class="row">
+    <div class="errMessg col-xs-12 text-center">
+    </div>
+  </div>
+  <footer class="row">
+    <div class="col-xs-1">
+    </div>
+    <div class="col-xs-2">
+
+      <div class="col-xs-9">
+        <a href=""><img class="img-responsive" src="https://darksky.net/dev/img/attribution/poweredby.png"></img></a>
+      </div>
+      <div class="col-xs-3">
+      </div>
+    </div>
+  <div class="col-xs-2">
+    <p>Pen created by Christopher Tiller</p>
+  </div>
+    <div class="col-xs-9">
+    </div>
+  </footer>
+
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
